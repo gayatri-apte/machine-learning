@@ -36,3 +36,48 @@ This project builds a logistic regression model using the **Framingham Heart Stu
 - Line plot of CHD cases
 - Heatmap of the confusion matrix
 
+#2) Autism Prediction using machine learning
+
+This project uses a machine learning approach to predict the likelihood of Autism Spectrum Disorder (ASD) based on a dataset of behavioral and demographic features. It includes data visualization, preprocessing, feature engineering, and model training using Logistic Regression, SVM, and XGBoost classifiers.
+
+## 📂 Dataset
+
+- **File:** `train.csv`
+- **Source:** [UCI / Kaggle ASD Screening Dataset]
+- **Features:** Includes questions from screening tests, demographics, and diagnosis class label (`Class/ASD`).
+
+## 📊 Exploratory Data Analysis (EDA)
+
+The project includes:
+- Count plots for categorical and numerical features
+- Distribution plots for float values
+- Pie chart for ASD class distribution
+- Age group classification (Toddler, Kid, Teenager, Young, Senior)
+- Heatmap of feature correlations
+
+## 🧼 Data Preprocessing
+
+- Missing/ambiguous values replaced (`yes/no/?`)
+- Label encoding of categorical columns
+- Log transformation for skewed columns like `age`
+- Feature engineering: `sum_score`, `ind`
+- Handling class imbalance using `RandomOverSampler`
+
+## 🧠 Models Used
+
+- Logistic Regression
+- XGBoost Classifier
+- Support Vector Classifier (SVC)
+
+## ⚙️ Libraries Used
+
+```python
+pandas
+numpy
+matplotlib
+seaborn
+sklearn
+xgboost
+imblearn
+
+
